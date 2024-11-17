@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #EDF6F9;
-    background-image: url("https://i.pinimg.com/736x/b7/01/75/b7017593172ac77bc9eda1bfec7e6323.jpg");
+    background-image: url("images/bgimage-2.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,7 +44,9 @@ nav ul li a {
     text-align: center;
     width: 400px;
     padding: 50px;
-    color: #EDF6F9;
+    color: #08ca86;
+    text-decoration:solid;
+    text-decoration-color: #081C15;
 }
 
 .babu {
@@ -89,7 +91,7 @@ nav ul li a {
 }
 
 body{
-    background-color: #141414;
+    background-color: #171623;
 }
 
 .wrapper{
@@ -108,11 +110,11 @@ body{
 .item{
     width: calc(var(--index) * 3);
     height: calc(var(--index) * 12);
-    background-color: #222;
+    background-color: #171623;
     background-size: cover;
     background-position: center;
     cursor: pointer;
-    filter: grayscale(1) brightness(.5);
+    filter: grayscale(0.25) brightness(.25);
     transition: transform 1.25s var(--transition), filter 3s var(--transition), width 1.25s var(--transition);
     will-change: transform, filter, rotateY, width;
 }
@@ -191,45 +193,6 @@ body{
     margin: 0 .45vw;
 }
 
-/*MAIN VIOLET CARD 3D HOVER IN THE*/
-/* .cards {
-    perspective: 500px;
-  }
-  
-  .card {
-    width: 200px;
-    height: 250px;
-    background: #16161d;
-    border: 2px solid #555555;
-    border-radius: 4px;
-    position: relative;
-    transform-style: preserve-3d;
-    will-change: transform;
-    transition: transform .5s;
-  }
-  
-  .card:hover {
-    transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
-  }
-  
-  .card_title {
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    transition: transform .5s;
-    font: 700 1.5rem monospace;
-    text-shadow: -1px -1px 0 #000,  
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-       1px 1px 0 #000;
-  }
-  
-  .card:hover .card_title {
-    transform: translateZ(50px);
-  } */
-
   .three_box_id {
     display: flex;
     flex-direction: column;
@@ -279,4 +242,9 @@ body{
     filter: blur(10px);
     transform: scale(0.9, 0.9);
   }
+
+  .cards{
+    align-content: center;
+  }
+  
   
