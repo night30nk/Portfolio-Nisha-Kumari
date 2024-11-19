@@ -49,10 +49,10 @@ nav ul li a {
     border-radius: 15px;
     text-align: center;
     padding: 20px; /* Adds space between the text and the borders */ 
-  }
+}
   
-  .hero::before,
-  .hero::after {
+.hero::before,
+.hero::after {
     position: absolute;
     content: "";
     width: 20%;
@@ -62,34 +62,34 @@ nav ul li a {
     font-weight: bold;
     background-color: #232536;
     transition: all 0.5s;
-  }
+}
   
-  .hero::before {
+.hero::before {
     top: 0; 
     right: 0; 
     border-radius: 0 15px 0 100%;
-  }
+}
   
-  .hero::after {
+.hero::after {
     bottom: 0;
     left: 0;
     border-radius: 0 100%  0 15px;
-  }
+}
   
-  .hero:hover::before,
-  .hero:hover:after {
+.hero:hover::before,
+.hero:hover:after {
     width: 100%;
     height: 100%;
     border-radius: 15px;
     transition: all 0.5s;
-  }
+}
   
-  .hero:hover:after {
+.hero:hover:after {
     content: "HELLO (❁´◡`❁)";
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 
 #home img {
     border-radius: 10%;
@@ -111,15 +111,7 @@ nav ul li a {
     color: #ffffff;
 }
 
-/* Project Cards */
-.project-card {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #95D5B2;
-    border-radius: 5px;
-}
-
-/* Gallery */
+/*everthing is changing so use hain iska*/
 * {
     margin: 0;
     padding: 0;
@@ -155,7 +147,7 @@ body{
     background-size: cover;
     background-position: center;
     cursor: pointer;
-    filter: grayscale(0.25) brightness(.25);
+    filter: grayscale(0.25) brightness(.50);
     transition: transform 1.25s var(--transition), filter 3s var(--transition), width 1.25s var(--transition);
     will-change: transform, filter, rotateY, width;
 }
@@ -234,40 +226,40 @@ body{
     margin: 0 .45vw;
 }
 
-  .three_box_id {
+.three_box_id {
     display: flex;
     flex-direction: column;
     gap: 15px;
-  }
+}
   
-  .three_box_id .red {
+.three_box_id .red {
     background-color: #58A4D4;
     background-image: url('https://cdn.iconscout.com/icon/free/png-512/free-code-forces-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-vol-2-pack-logos-icons-3029920.png?f=webp&w=256'); /* Add your green logo here */
     background-size: 10%; /* Resize the logo to 40% of its original size */
     background-repeat: no-repeat;
     background-position: center 20%;
     padding-top: 20px;
-  }
+}
   
-  .three_box_id .blue {
+.three_box_id .blue {
     background-color: #0077B5;
     background-image: url('https://cdn.iconscout.com/icon/free/png-512/free-leetcode-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-vol-1-pack-logos-icons-3030025.png?f=webp&w=256'); /* Add your green logo here */
     background-size: 10%; /* Resize the logo to 40% of its original size */
     background-repeat: no-repeat;
     background-position: center 20%;
     padding-top: 20px;
-  }
+}
   
-  .three_box_id .green {
+.three_box_id .green {
     background-color: #1D3557;
     background-image: url('https://cdn.iconscout.com/icon/free/png-512/free-linkedin-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-916919.png?f=webp&w=256'); /* Add your green logo here */
     background-size: 10%; /* Resize the logo to 40% of its original size */
     background-repeat: no-repeat;
     background-position: center 20%;
     padding-top: 20px;
-  }
+}
   
-  .three_box_id .three_card_id {
+.three_box_id .three_card_id {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -279,28 +271,104 @@ body{
     color: white;
     cursor: pointer;
     transition: 400ms;
-  }
+}
   
-  .three_box_id .three_card_id p.tip {
+.three_box_id .three_card_id p.tip {
     font-size: 1em;
     font-weight: 700;
-  }
+}
   
-  .three_box_id .three_card_id p.second-text {
+.three_box_id .three_card_id p.second-text {
     font-size: 0.7em;
-  }
+}
   
-  .three_box_id .three_card_id:hover {
+.three_box_id .three_card_id:hover {
     transform: scale(1.1, 1.1);
-  }
+}
   
-  .three_box_id:hover > .three_card_id:not(:hover) {
+.three_box_id:hover > .three_card_id:not(:hover) {
     filter: blur(10px);
     transform: scale(0.9, 0.9);
-  }
+}
 
-  .cards{
-    align-content: center;
-  }
-  
-  
+/* about section css */
+#about {
+    background-color: #f4f4f9;
+    padding: 30px;
+    margin: 20px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#about p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* Project Cards */
+.project-card {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #C6C7D4;
+    border-radius: 10px;
+    background: #15141F; /* Transparent dark background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Adds transition for smooth hover effects */
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Lifts the card slightly */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds deeper shadow on hover */
+}
+
+.project-card h3 {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #FFFFFF; /* Ensures the text is visible on dark background */
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1em;
+    color: #E4E4E4; /* Light grey text color for better readability */
+    margin-bottom: 15px;
+}
+
+.project-card a {
+    font-size: 1.1em;
+    color: #0077B5; /* Bright color for the link */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 119, 181, 0.1); 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-card a:hover {
+    background-color: #0077B5; 
+    color: #FFFFFF; 
+}
+
+/* social buttons */
+
+/* Footer Styling */
+footer {
+    background-color: #232536; 
+    color: #FFFFFF; 
+    padding: 1em; 
+    text-align: center; 
+    
+}
+
+
+
+
+
